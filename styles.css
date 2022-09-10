@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Karla-Bold;
+    src: url(./assets/fonts/Karla-Bold.ttf);
+}
+@font-face {
+    font-family: Karla-BoldItalic;
+    src: url(./assets/fonts/Karla-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Karla-Italic;
+    src: url(./assets/fonts/Karla-Italic.ttf);
+}
+@font-face {
+    font-family: Karla-Regular;
+    src: url(./assets/fonts/Karla-Regular.ttf);
+}
+
+:root{
+    --white: #FFFFFF;
+    --green: #4ADF86;
+    --green-light: #10B981;
+    --dark: #1C1C1C;
+    --dark-blue: #1F2937;
+    --blue: #273549;
+    --Kregular: "Karla-Regular";
+    --Kbold: "Karla-Bold";
+    --Inter: "'Inter', sans-serif";
+    --sm: 16px;
+    --md: 20px;
+    --lg: 40px;
+}
+
+
+body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 678px;
+    height: 678px;
+    background-color: var(--dark);
+    margin: 0;
+    border: 0;
+}
+.gen-container{
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    margin: 0;
+    padding: 0 52px 0 52px;
+    background-color: var(--dark-blue);
+    width: 550px;
+    height: 550px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto auto 35px;
+}
+
+.title{
+    position: relative;
+    width: 360px;
+    height: 96px;
+    top: 56px;
+    font-family: "Karla-Bold";
+    font-size: var(--lg);
+    text-align: start;
+    color: var(--white);
+    margin: 0;
+}
+
+.title > span{
+    color: var(--green);
+}
+
+.subtitle{
+    height: 36px;
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: var(--md);
+    color: var(--white);
+    margin-top: 12px;
+}
+
+.btn-primary{
+    width: 192px;
+    height: 42px;
+    font-family: var(--Inter);
+    font-weight: 500;
+    font-size: var(--sm);
+    color: var(--white);
+    background: var(--green-light);
+    border:none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px var(--blue);
+
+}
+
+#linea{
+    position: relative;
+    width: 456px;
+    height: 0;
+    border-top: 1px solid var(--blue);
+    bottom: 16px;
+    
+}
+
+.passwd-out{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 68px;
+
+}
+.passwd{
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    border: none;
+    background: var(--blue);
+    color: var(--green);
+    font-size: var(--sm);
+    text-align: center;
+    font-weight: 500;
+    line-height: 36px;
+}
